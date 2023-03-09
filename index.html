@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/vina2325/0309-1/main/css/reset.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/vina2325/0309-1/main/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <img src="img/main-bg.png" alt="">
+            </div>
+            <a class="scroll-down" href="#s1">
+                <div class="mouse">
+                    <span class="move"></span>
+                </div>
+            </a>
+        </header>
+        <section class="s1" id="s1" style="background: red;height: 100vh;">
+        </section>
+    </div>
+</body>
+<script src="https://raw.githubusercontent.com/vina2325/0309-1/main/css/style.css"></script>
+<script>
+    // mouse scroll dow
+    $(function () {
+        $('.scroll-down, .sidebar a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500);
+        });
+    });
+</script>
+
+</html>
