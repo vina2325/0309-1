@@ -217,12 +217,8 @@ font-size: 1.2rem;
 }
 
 header {
-    background: url(../img/main-bg.png) no-repeat 50% 0;
     height: 100%;
     position: relative;
-    background-size: cover;
-    border-bottom: 1px #000 solid;
-    margin-top: 70px;
 }
 
 
